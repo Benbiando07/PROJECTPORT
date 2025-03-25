@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        #navbar {
+            background-color: #333;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #navbar ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        #navbar ul li {
+            margin: 0 30px;
+        }
+
+        #navbar ul li a {
+            color: white;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        #navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        #welcome-section {
+            background: linear-gradient(135deg, #1e90ff, #6a5acd);
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #welcome-section h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        #projects {
+            background-color: #17171a;
+            padding: 80px 20px;
+            text-align: center;
+            color: black;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            justify-items: center;
+        }
+
+        .project-tile {
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 350px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-tile:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-tile h3 {
+            font-size: 25px;
+            color: rgb(24, 23, 23);
+            margin-top: 15px;
+        }
+
+
+        #contact {
+            background-color: #f9f9f9;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .project-tile a {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        h2 {
+            color: white;
+            width: 80%;
+            font-size: 5rem;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+
+        #navbar ul li a {
+            font-size: 16px;
+            padding: 10px 15px;
+        }
+
+        #navbar ul {
+            gap: 10px;
+        }
+
+        #navbar {
+            padding: 10px 0;
+        }
+
+
+
+
+        @media screen and (max-width: 768px) {
+            #navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #navbar ul li {
+                margin-bottom: 10px;
+            }
+
+            #welcome-section h1 {
+                font-size: 40px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#welcome-section">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a id="profile-link" href="https://github.com/Benbiando07" target="_blank">GitHub Profile</a></li>
+        </ul>
+    </nav>
+
+    <section id="welcome-section">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore my work, projects, and learn more about me.</p>
+    </section>
+
+    <section id="projects">
+        <h2>All My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-tile">
+                <h3><a href="CatPhotoApp.html">Cat Photo App</a></h3>
+            </div>
+            <div class="project-tile">
+                <h3><a href="cafeMenu.html">Cafe Menu</a></h3>
+            </div>
+            <div class="project-tile">
+                <h3><a href="colorMakers.html">Color Makers</a></h3>
+            </div>
+            <div class="project-tile">
+                <h3><a href="Regform.html">Building Registration Form</a></h3>
+            </div>
+            <div class="project-tile">
+                <h3><a href="surveyform.html">Survey Form</a></h3>
+            </div>
+            <div class="project-tile">
+                <h3><a href="rothkopainting.html">Rothko Painting</a></h3>
+            </div>
+            <div class="project-tile">
+                <h3><a href="photogallery.html">Photo Gallery</a></h3>
+            </div>
+            <div class="project-tile">
+                <h3><a href="nutrition.html">Nutrition Label</a></h3>
+            </div>
+            <div class="project-tile">
+                <h3><a href="buildingquiz.html">Build a Quiz</a></h3>
+            </div>
+            <div class="project-tile">
+                <h3><a href="tributepage.html">Build a Tribute Page</a></h3>
+            </div>
+            <div class="project-tile">
+                <h3><a href="balance.html">Building a Balance Sheet</a></h3>
+            </div>
+            <div class="project-tile">
+                <h3><a href="catpainting.html">Building a Cat Painting</a></h3>
+            </div>
+            <div class="project-tile">
+                <h3><a href="buildingpiano.html">Building a Piano</a></h3>
+            </div>
+            <div class="project-tile">
+                <h3><a href="techdocpage.html">Technical Documentation Page</a></h3>
+            </div>
+            <div class="project-tile">
+                <h3><a href="cityskyline.html">Building a City Skyline</a></h3>
+            </div>
+            <div class="project-tile">
+                <h3><a href="magazine.html">Building a Magazine</a></h3>
+            </div>
+            <div class="project-tile">
+                <h3><a href="landingpage.html">Product Landing Page</a></h3>
+            </div>
+            <div class="project-tile">
+                <h3><a href="ferriswheel.html">Building a Ferris Wheel</a></h3>
+            </div>
+            <div class="project-tile">
+                <h3><a href="penguin.html">Building a Penguin</a></h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:biandobenjamin6@example.com">biandobenjamin6@example.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Biando, Benjamin III V. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
